@@ -1094,6 +1094,7 @@ section {
 .testimonial-item {
   text-align: center;
   /* color: #fff; */
+  cursor: pointer;
 }
 
 .testimonial-item .testimonial-img {
@@ -1101,7 +1102,6 @@ section {
   border-radius: 50%;
   border: 6px solid rgba(255, 255, 255, 0.15);
   margin: 10px;
-  cursor: pointer;
 }
 
 .testimonial-item h3 {
