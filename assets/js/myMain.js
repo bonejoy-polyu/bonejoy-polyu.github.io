@@ -1,16 +1,21 @@
 const bxW = 300;
-const bxMargin = 20;
+const bxMargin = 0;
+// const bxMargin = 20;
 
 function init() {
     var numOfBx = document.getElementsByClassName("paper-block").length;
     document.getElementById("paper-row").style.width = (numOfBx * (bxW+bxMargin*2) - bxMargin*2)+"px"; // - 40 since start & end margin doesn't exist (20 each)
-    for (var i = 0; i < document.getElementsByClassName("paper-block").length; i++) {
-        document.getElementsByClassName("paper-block")[i].style.width = bxW;
-        if (i != 0)
-            document.getElementsByClassName("paper-block")[i].style.marginLeft = bxMargin;
-        if (i != document.getElementsByClassName("paper-block").length-1)
-            document.getElementsByClassName("paper-block")[i].style.marginRight = bxMargin;
-    }
+    // for (var i = 0; i < document.getElementsByClassName("paper-block").length; i++) {
+    //     document.getElementsByClassName("paper-block")[i].style.width = bxW;
+    //     if (i != 0)
+    //         document.getElementsByClassName("paper-block")[i].style.marginLeft = bxMargin;
+    //     if (i != document.getElementsByClassName("paper-block").length-1)
+    //         document.getElementsByClassName("paper-block")[i].style.marginRight = bxMargin;
+    // }
+    // var paperElm = document.querySelectorAll(".paper-block img");
+    // for (var i = 0; i < paperElm.length; i++) {
+    //     paperElm[i].style.width = 200;
+    // }
 }
 
 function slide(elem) {

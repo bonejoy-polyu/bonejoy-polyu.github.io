@@ -991,9 +991,14 @@ section {
 }
 
 .paper-block {
-  /* width: 300px !important; init by js*/
+  width: 300px !important;
   margin: 0 20px;
   background-color: white;
+  cursor: pointer;
+}
+
+.paper-block img {
+  width: 150px;
 }
 
 .services .icon-box {
